@@ -86,8 +86,7 @@ def train(**kwargs):
         forward_count = 0
         pass_count = 0
         for ii, (vis_image, lwir_iamge, bbox_, label_, scale) in tqdm(enumerate(dataloader), desc='Training'):
-            if ii==0:
-                break;
+
 
             try :
                 if len(bbox_[0]) == 1 :
